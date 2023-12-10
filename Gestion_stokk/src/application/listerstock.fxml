@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.listerstockController">
+   <children>
+      <AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <BorderPane layoutX="271.0" layoutY="200.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-8.0" prefHeight="600.0" prefWidth="207.0" styleClass="ancho" stylesheets="@home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="btn_home" layoutX="30.0" layoutY="174.0" mnemonicParsing="false" onAction="#home" prefHeight="44.0" prefWidth="176.0" styleClass="btn_home" stylesheets="@home.css" text="   Home" textFill="WHITE" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="172.0">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn_produit" layoutX="29.0" layoutY="224.0" mnemonicParsing="false" onAction="#produit" prefHeight="44.0" prefWidth="176.0" styleClass="btn_produit" stylesheets="@home.css" text="     Product" textFill="WHITE" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="5.0">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="btn_stock" layoutX="34.0" layoutY="281.0" mnemonicParsing="false" onAction="#stock" prefHeight="44.0" prefWidth="176.0" style="-fx-background-color: #181d20;" styleClass="btn_produit" stylesheets="@home.css" text="   Stock" textFill="WHITE" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="5.0">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="btn_logout" layoutX="27.0" layoutY="510.0" mnemonicParsing="false" onAction="#logout" prefHeight="44.0" prefWidth="176.0" styleClass="btn_logout" stylesheets="@home.css" text="     Logout" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="5.0" />
+                              <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="37.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../home-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="37.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../produit.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="37.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../stock.png" />
+                                 </image>
+                              </ImageView>
+                              <Line endX="89.0" layoutX="106.0" layoutY="124.0" startX="-93.0" strokeWidth="2.0" />
+                              <Label layoutX="92.0" layoutY="63.0" text="Gestion-stock" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="65.0" fitWidth="58.0" layoutX="24.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../gestion-de-linventaire.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="37.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../logoutt.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="674.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="28.0" layoutY="113.0" prefHeight="600.0" prefWidth="672.0" stylesheets="@home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="4.0" layoutY="158.0" prefHeight="441.0" prefWidth="560.0" stylesheets="@home.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <Button fx:id="btn_imprimer" layoutX="156.0" layoutY="378.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="30.0" prefWidth="100.0" styleClass="buttonn" stylesheets="@home.css" text="Print" />
+                                    <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="110.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../imprimer.png" />
+                                       </image>
+                                    </ImageView>
+                                    <TableView prefHeight="368.0" prefWidth="555.0" style="-fx-background-radius: 8px; -fx-border-radius: 8px;" styleClass="table_view" stylesheets="@home.css">
+                                      <columns>
+                                        <TableColumn fx:id="ID" prefWidth="32.0" text="ID" />
+                                        <TableColumn fx:id="qut_stock" prefWidth="71.0" text="qut_stock" />
+                                          <TableColumn fx:id="pudadd" prefWidth="69.0" text="pudadd" />
+                                          <TableColumn fx:id="mondadd" prefWidth="78.0" text="mondadd" />
+                                          <TableColumn fx:id="design" prefWidth="69.0" text="design" />
+                                          <TableColumn fx:id="obs" prefWidth="61.0" text="obs" />
+                                          <TableColumn fx:id="u_m" prefWidth="68.0" text="u_m" />
+                                          <TableColumn fx:id="date" prefWidth="106.0" text="date" />
+                                      </columns>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <TextField fx:id="text_search" layoutX="30.0" layoutY="123.0" onAction="#search" prefHeight="25.0" prefWidth="255.0" promptText="search by ID or name" styleClass="search" stylesheets="@home.css" />
+                              <Button fx:id="btn_modifier" layoutX="590.0" layoutY="389.0" mnemonicParsing="false" onAction="#modifier" prefHeight="30.0" prefWidth="100.0" styleClass="buttonn" stylesheets="@home.css" text="Update" />
+                              <Button fx:id="btn_supprimer" layoutX="590.0" layoutY="428.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="30.0" prefWidth="100.0" styleClass="btn_supprimer" stylesheets="@home.css" text="Delete" />
+                              <Button fx:id="btn_ajouter" layoutX="590.0" layoutY="466.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="30.0" prefWidth="100.0" styleClass="btn_ajouter" stylesheets="@home.css" text="Add" />
+                              <ImageView fitHeight="28.0" fitWidth="23.0" layoutX="566.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../modifier.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="564.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../remove.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="564.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../add.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="6.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../search.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="235.0" layoutY="34.0" prefHeight="25.0" prefWidth="131.0" stylesheets="@home.css" text="Liste Stocks">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="106.0" layoutX="261.0" layoutY="68.0" startX="-86.0" />
+                              <ImageView fitHeight="34.0" fitWidth="42.0" layoutX="183.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../stock.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btn_retour" layoutX="590.0" layoutY="530.0" mnemonicParsing="false" onAction="#retour" prefHeight="30.0" prefWidth="100.0" styleClass="buttonn" stylesheets="@home.css" text="Back" />
+                              <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="557.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../retour.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
