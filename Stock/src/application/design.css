@@ -1,0 +1,25 @@
+
+/*c'est le stylesheet de l'interface signUp*/
+
+.button {
+	-fx-background-color: #263238;
+	-fx-text-fill: #ffffff;
+	-fx-text-alignment: center;
+	-fx-font-size: 15px;
+	-fx-border-radius: 0 0 0 0;
+	-fx-font-family: Arial;
+}
+
+.button:pressed:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474F;
+	-fx-cursor: hand
+}
+.button:hover{
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+	-fx-cursor: hand
+}

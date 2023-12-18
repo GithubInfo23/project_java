@@ -1,0 +1,164 @@
+.side_anchorpane{
+	-fx-background-color:  #263238;
+	-fx-border-color:  #263238;
+	-fx-border-width:  2px 2px 2px 2px;
+	-fx-border-style: solid;
+}
+
+.side_Anchorpane{
+	-fx-background-color:  #263238;
+	-fx-border-color:  #263238;
+	-fx-border-width:  2px 2px 2px 2px;
+	-fx-border-style: solid;
+}
+
+.button {
+	-fx-background-color: #263238;
+	-fx-text-fill: #ffffff;
+	-fx-text-alignment: center;
+	-fx-font-size: 15px;
+	-fx-border-radius: 0 0 0 0;
+	-fx-font-family: Arial;
+}
+
+ .label{
+ 	
+ }
+
+
+.btn_Users,.btn_Stock,.btn_Search,.btn_workbensh,.btn_toprint,.btn_AddUser,.btn_logout{
+	-fx-background-color: #263238;
+	-fx-border-color:  #263238;
+	-fx-border-width:  2px 2px 2px 2px;
+	-fx-border-style: solid;
+	
+}
+
+.btn_logout:hover{
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #6e6e8c;
+	-fx-background-color: #6e6e8c;
+	-fx-cursor: hand;
+}
+.btn_toprint:hover{
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #6e6e8c;
+	-fx-background-color: #6e6e8c;
+	-fx-cursor: hand;
+}
+.btn_AddUser:hover{
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474f;
+	-fx-background-color: #37474f;
+	-fx-cursor: hand;
+}
+.btn_workbensh:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474f;
+	-fx-background-color: #37474f;
+	-fx-cursor: hand;
+}
+.btn_Users:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474f;
+	-fx-background-color: #37474f;
+	-fx-cursor: hand;
+}
+.btn_Stock:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474f;
+	-fx-background-color: #37474f;
+	-fx-cursor: hand;
+}
+.btn_Search:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474f;
+	-fx-background-color: #37474f;
+	-fx-cursor: hand;
+}
+.btn_import{
+	-fx-background-color: #ffffff;
+	-fx-border-color:  #ffffff;
+	-fx-border-width:  2px 2px 2px 2px;
+	-fx-border-radius: 8px;
+	-fx-background-radius: 8px;
+	-fx-border-style: solid;
+	-fx-cursor: hand;
+}
+
+.btn_Delete{
+-fx-background-color:  #FF0000;
+-fx-border-color:  #FF0000;
+-fx-border-radius: 8px;
+-fx-background-radius: 8px;
+}
+
+.btn_Delete:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+	-fx-cursor: hand;
+}
+
+.btn_Update{
+-fx-background-color:   #ff6600;
+-fx-border-color:   #ff6600;
+-fx-border-radius: 8px;
+-fx-background-radius: 8px;
+}
+
+.btn_Update:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+	-fx-cursor: hand;
+}
+
+.btn_Add{
+-fx-background-color:    #096A09;
+-fx-border-color:    #096A09;
+-fx-border-radius: 8px;
+-fx-background-radius: 8px;
+}
+
+.btn_Add:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+	-fx-cursor: hand;
+}
+
+/*table css */
+.table_view{
+    -fx-padding: 0;
+    -fx-border-radius: 8px;
+    -fx-border-color: linear-gradient(to bottom right, #f89828, #d83814);
+}
+.table_view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #f89828, #d83814);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0 ;
+}
+.table_view .column-header, .filter{
+    -fx-size: 30px;
+    -fx-background-color: transparent;
+}
+.table_view .column-header .label{
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+.white-bg{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 8px;
+}
