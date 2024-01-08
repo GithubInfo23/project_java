@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" stylesheets="@../css/ChefStock.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_java.src.application.Controller.ChefStockController">
+   <children>
+      <AnchorPane layoutX="-20.0" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <AnchorPane blendMode="SRC_ATOP" layoutX="14.0" prefHeight="538.0" prefWidth="182.0" style="-fx-background-color: #263238;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Pane layoutX="-45.0" layoutY="-13.0" prefHeight="85.0" prefWidth="175.0" style="-fx-background-color: #263238;" styleClass="border" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="38.0" layoutX="32.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageLogin/gestion-Stock.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="TOP" layoutX="73.0" layoutY="26.0" prefHeight="34.0" prefWidth="95.0" text="Stock management">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.3533123148728621" endY="1.0" proportional="false" startY="0.9148264758594404">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.40196555852890015" green="0.8859649300575256" blue="0.7488317489624023" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.25055928411633116">
+                                       <color>
+                                          <Color red="0.5004060864448547" green="0.8859649300575256" blue="0.7445933222770691" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Line endX="74.33332824707031" fill="#0b0b0b" layoutX="93.0" layoutY="85.0" startX="-75.99998474121094" strokeWidth="2.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Line>
+                     </children></Pane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="475.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageChefStock/accueil .png" />
+               </image></ImageView>
+            <Label layoutX="524.0" layoutY="23.0" prefHeight="44.0" prefWidth="174.0" text="Welcome Stock Manager" AnchorPane.topAnchor="23.0">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <Line endX="110.33334350585938" layoutX="561.0" layoutY="67.0" startX="-85.00003051757812" strokeWidth="2.0" />
+            <AnchorPane layoutX="216.0" layoutY="80.0" prefHeight="156.0" prefWidth="673.0" styleClass="White-bg" stylesheets="@../css/ChefStock.css">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="101.0" prefWidth="205.0" style="-fx-background-color: #263238;" styleClass="border" stylesheets="@../css/ChefStock.css" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="74.0" layoutX="18.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageChefStock/personnes (3).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nbrDemmande" contentDisplay="RIGHT" layoutX="172.0" layoutY="19.0" prefHeight="19.0" prefWidth="16.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="100.0" text="Number Of Orders" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="234.0" layoutY="6.0" prefHeight="144.0" prefWidth="205.0" style="-fx-background-color: #263238;" styleClass="border" stylesheets="@../css/ChefStock.css">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="74.0" layoutX="26.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageChefStock/monnaie-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="totalVente" contentDisplay="RIGHT" layoutX="163.0" layoutY="18.0" prefHeight="19.0" prefWidth="16.0" text="\\ 0 dhs" textFill="WHITE">
+
+                        <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="103.0" style="-fx-font-family: Arial;" text="Total Income" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="467.0" layoutY="6.0" prefHeight="144.0" prefWidth="205.0" style="-fx-background-color: #263238;" styleClass="border" stylesheets="@../css/ChefStock.css" AnchorPane.rightAnchor="12.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="74.0" layoutX="21.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageChefStock/Stock (2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nbrProduitDispo" contentDisplay="RIGHT" layoutX="169.0" layoutY="20.0" prefHeight="19.0" prefWidth="16.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="104.0" style="-fx-font-family: Arial;" text="Available Product" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect></AnchorPane>
+            <AnchorPane layoutX="216.0" layoutY="247.0" prefHeight="332.0" prefWidth="673.0" styleClass="White-bg" stylesheets="@../css/ChefStock.css">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <AnchorPane layoutX="34.0" layoutY="19.0" prefHeight="285.0" prefWidth="307.0" styleClass="White-bg">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <AreaChart fx:id="IncomeDataChart" layoutX="-143.0" layoutY="-49.0" prefHeight="351.3333333333333" prefWidth="357.3333333333333" title="Income Data Chart" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </AreaChart>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="367.0" layoutY="21.0" prefHeight="285.0" prefWidth="285.0" styleClass="White-bg">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <BarChart fx:id="OrderDataChart" layoutX="-122.0" layoutY="-57.0" prefHeight="343.3333333333333" prefWidth="378.0" title="Order Data Chart" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+            <Button fx:id="homeButton" layoutX="28.0" layoutY="117.0" mnemonicParsing="false" onAction="#ouvrirHome" prefHeight="44.0" prefWidth="162.0" style="-fx-background-color: #181d20;" styleClass="homeButton" stylesheets="@../css/ChefStock.css" text="Home">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="produitButton" layoutX="29.0" layoutY="169.0" mnemonicParsing="false" onAction="#ouvrirProduit" prefHeight="44.0" prefWidth="162.0" styleClass="produitButton" stylesheets="@../css/ChefStock.css" text="        Product">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="stockButton" layoutX="29.0" layoutY="226.0" mnemonicParsing="false" onAction="#ouvrirStock" prefHeight="44.0" prefWidth="162.0" styleClass="stockButton" stylesheets="@../css/ChefStock.css" text="   Stock" />
+            <Button fx:id="logoutBotton" layoutX="32.0" layoutY="550.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="152.0" styleClass="logoutBotton" stylesheets="@../css/ChefStock.css" text="      Log out">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="27.0" layoutX="52.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageChefStock/telechargement.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="43.0" layoutX="47.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" styleClass="icone">
+               <image>
+                  <Image url="@../ImageChefStock/accueil (1).png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="45.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageChefStock/ajouter-au-chariot.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="47.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageChefStock/stock.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

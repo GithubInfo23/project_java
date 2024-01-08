@@ -1,0 +1,155 @@
+
+.button {
+    -fx-background-color: #263238;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-font-size: 15px;
+    -fx-font-family: "Arial";
+    -fx-border-radius: 0 0 0 0;
+}
+.bordermenu{
+	 -fx-background-color: Black;
+}
+.White-bg{
+	-fx-background-color : #fff;
+	-fx-background-radius: 8px;
+}
+.border{
+	-fx-background-radius: 8px;
+}
+
+
+.button:pressed:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #37474F;
+	-fx-cursor: hand
+}
+.button:hover{
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+	-fx-cursor: hand
+}
+
+.homeButton,.stockButton,.entropotButton,.imprimerProduit,.produitButton,.modifierProduit,.listProduit,.ruptureProduit,.modifierStock,.listStock,.ruptureStock,.logoutBotton{
+	-fx-background-color: #263238;
+	-fx-border-color:  #263238;
+	-fx-border-width:  2px 2px 2px 2px;
+	-fx-border-style: solid;
+	
+}
+.homeButton:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.stockButton:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.entropotButton:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.imprimerProduit:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.produitButton:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.modifierProduit:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.listProduit:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+
+.modifierStock:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.listStock:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+.ruptureProduit:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+
+.logoutBotton:hover {
+	-fx-scale-y: 0.95;
+	-fx-scale-x: 0.95;
+	-fx-border-color: #039ed3;
+	-fx-background-color: #039ed3;
+}
+
+.side_Anchorpane{
+	-fx-background-color:  #263238;
+	-fx-border-color:  #263238;
+	-fx-border-width:  2px 2px 2px 2px;
+	-fx-border-style: solid;
+}
+
+.AjouterBotton{
+	-fx-background-color: #008000;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-font-size: 15px;
+    -fx-border-radius: 0 0 0 0;
+}
+
+.SupprimerBotton{
+	-fx-background-color: #FF000f;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-font-size: 15px;
+    -fx-border-radius: 0 0 0 0;
+}
+
+/*table css */
+.table_view{
+    -fx-padding: 0;
+    -fx-border-radius: 8px;
+    -fx-border-color: linear-gradient(to bottom right, #f99e2c, #d73914);
+}
+.table_view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #f99e2c, #d73914);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0 ;
+}
+.table_view .column-header, .filter{
+    -fx-size: 30px;
+    -fx-background-color: transparent;
+}
+.table_view .column-header .label{
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+
